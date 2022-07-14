@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: sans-serif;
+    line-height: 1.3;
+}
+main{
+    width: 30%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container{
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+}
+.image img{
+    width: 100%;
+}
+.text-box{
+    text-align: center;
+}
+.text-box h2{
+    align-items: left;
+    justify-content: left;
+    color: black;
+    font-weight: normal;
+    letter-spacing: 0.75;
+    margin: 20px 0;
+    opacity: 0.7;
+    font-size: 20px;
+    
+    
+}
+.plan-intro{
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+/* .plan-intro-text{
+    justify-content: center;
+    align-items: center;
+} */
+
+.text-box p {
+    width: 70%;
+    font-size: 16px;
+    margin: auto;
+    text-align: center;
+    color: hsl(224, 23%, 55%);
+    margin-bottom: 15px;
+  }
+  /* span{
+    height: 30px;
+    width: 30px;
+    color: black;
+  } */
+
+
+  .plan {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(225, 100%, 98%);
+    width: 80%;
+    border-radius: 15px;
+    height: 68px;
+    margin: auto;
+    padding-left:10px;
+    padding-right: 10px;
+  }
+  .planX {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:hsl(0, 0%, 55%);    width: 80%;
+    border-radius: 15px;
+    height: 68px;
+    margin: auto;
+    padding-left:10px;
+    padding-right: 10px;
+  }
+  .plan1X {
+    color: hsl(0, 0%, 100%);
+    /* font-weight: bold; */
+    font-weight: 520;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .plan2X {
+    color: hsl(0, 0%, 96%);
+    font-size: 14px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .inner-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .music-icon {
+    margin-left: 20px;
+  }
+
+  .music-icon img {
+    width: 40px;
+    margin-right: 15px;
+  }
+
+  .plan1 {
+    color: hsl(223, 47%, 23%);
+    /* font-weight: bold; */
+    font-weight: 520;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+  }
+
+  .plan2 {
+    color: hsl(224, 23%, 55%);
+    font-size: 14px;
+  }
+  .plan-link{
+    margin-right: 30px;
+  }
+  .plan-link a{
+    text-decoration: none;
+  }
+
+  .payment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .payment a:link,
+  .payment a:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: hsl(245, 75%, 52%);
+    box-shadow: 0 10px 18px hsl(223, 15%, 76%);
+    font-size: 14px;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 10px 90px;
+    border-radius: 9px;
+  }
+
+  .payment a:hover,
+  .payment a:active {
+    background-color: hsl(224, 23%, 55%);
+  }
+
+  .cancel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cancel a:link,
+  .cancel a:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: hsl(224, 23%, 55%);
+  }
+
+  .cancel a:hover,
+  .cancel a:active {
+    color: hsl(223, 47%, 23%);
+  }
+
+
+
+
+
+/*mobile responsiveness*/
+/* 1440px */
+@media (max-width: 2560px) {
+    body {
+      background-image: url("img/pattern-background-desktop.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: hsl(225, 100%, 94%);
+      height: 50vh;
+    }
+
+
+@media (max-width: 24rem) {
+    body {
+      background-image: url("img/pattern-background-mobile.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-color: hsl(225, 100%, 94%);
+      height: 50vh;
+    }
+  
+    main {
+      width: 90%;
+    }
+  
+    .text__box p {
+      width: 90%;
+      margin: 0 auto 15px auto;
+    }
+  
+    .plan {
+      width: 90%;
+    }
+  
+    .plan__1 {
+      font-size: 14px;
+    }
+  
+    .plan__2 {
+      font-size: 12px;
+    }
+  
+    .payment a:link,
+    .payment a:visited {
+      padding: 10px 60px;
+    }
+  }
